@@ -10,7 +10,6 @@ class PirateTest < Minitest::Test
   end
 
   def test_can_have_different_name
-    skip
     pirate = Pirate.new("Blackbeard")
     assert_equal "Blackbeard", pirate.name
   end

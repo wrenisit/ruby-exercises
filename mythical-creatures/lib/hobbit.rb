@@ -1,12 +1,13 @@
 class Hobbit
   attr_reader :name, :disposition, :adult, :old
-  attr_accessor :age
+  attr_accessor :age, :has_ring
   def initialize(name, disposition = "homebody")
     @name = name
     @disposition = disposition
     @age = 0
     @adult = false
     @old = false
+    @has_ring = false
   end
 
   def celebrate_birthday
@@ -28,5 +29,14 @@ class Hobbit
     @old
   end
 
+  def has_ring?
+    if @name == "Frodo"
+      @has_ring = true
+    end
+    @has_ring
+  end
 
+  def is_short?
+    true
+  end
 end

@@ -95,7 +95,6 @@ class CentaurTest < Minitest::Test
 
   def test_after_sleeping_it_is_no_longer_cranky
     centaur = Centaur.new("George","Palomino")
-
     centaur.shoot
     centaur.run
     centaur.shoot
@@ -129,7 +128,6 @@ class CentaurTest < Minitest::Test
     centaur.lay_down
     centaur.drink_potion
     assert_equal true, centaur.sick
-
   end
 
 end

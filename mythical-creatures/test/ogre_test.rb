@@ -9,19 +9,16 @@ class OgreTest < Minitest::Test
   end
 
   def test_it_can_live_somewhere_by_default
-    skip
     ogre = Ogre.new('Brak')
     assert_equal 'Swamp', ogre.home
   end
 
   def test_it_doesnt_have_to_live_in_a_swamp
-    skip
     ogre = Ogre.new('Brak', 'The Ritz')
     assert_equal 'The Ritz', ogre.home
   end
 
   def test_it_can_meet_humans
-    skip
     ogre = Ogre.new('Brak')
     human = Human.new
     assert_equal 'Jane', human.name
